@@ -1,0 +1,46 @@
+﻿@using MyCoreApp.ViewModels;
+@{
+    ViewData["Title"] = "Decrypted Files Dowloader";
+}
+@model List<string>
+
+
+<div class="container1">
+</div>
+<div class="block-container">
+    <div class="block">
+        <h3>Розшифровані файли:</h3>
+        <ul href="#">
+            <ol>
+                @foreach (var fileName in Model)
+                {
+                    <li>
+                        <a class="text-dark" asp-controller="Home" asp-action="DownloadDecryptFile"
+                           asp-route-fileName="@fileName">@fileName - Завантажити</a>
+
+                    </li>
+                }
+            </ol>
+        </ul>
+    </div>
+
+    <div class="block">
+		<img src="~/images/shif3.gif" alt="Изображения" width="50%">
+    </div>
+</div>
+<div class="container1">
+</div>
+<div class="block-container">
+    <div class="block">
+    </div>
+
+    <div class="block">
+    </div>
+</div>
+<div class="container1">
+</div>
+@section Scripts{
+    <script src="~/js/formUploader.js"></script>
+    @*To validate the model on the client*@
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

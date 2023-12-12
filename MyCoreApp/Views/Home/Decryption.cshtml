@@ -1,0 +1,50 @@
+﻿@using MyCoreApp.ViewModels;
+@{
+    ViewData["Title"] = "Decryption Files";
+}
+@model EncryptedFileViewModel
+
+
+
+<div class="container1">
+</div>
+
+<div class="block-container">
+    <div class="block">
+        <form asp-controller="Home" asp-action="DecryptFiles" method="post" enctype="multipart/form-data">
+            <h3>Дешифрування файлів</h3>
+            <div class="container1">
+                @ViewBag.Message
+            </div>
+            <label for="Key">Введіть ключ доступу:</label>
+            <input type="text" asp-for="Key" />
+            <div class="container1">
+                <label asp-for="UploadsDecrypt"></label>
+                <input asp-for="UploadsDecrypt" onchange="displayNames(this, 'names')" />
+                <ul id="names"></ul>
+                <span class="text-center" asp-validation-for="UploadsDecrypt"></span>
+            </div>
+            @Html.AntiForgeryToken()
+            <button type="submit" class="closing-button">Дешифрувати</button>
+        </form>
+    </div>
+  
+    <div class="block">
+
+        <img src="~/images/shif4.gif" alt="мал4">
+    </div>
+</div>
+
+<div class="container1">
+</div>
+<div class="block1">
+    <img src="~/images/Img3.jpg" alt="мал4">
+</div>
+
+<div class="container1">
+</div>
+@section Scripts{
+    <script src="~/js/formUploader.js"></script>
+    @*To validate the model on the client*@
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+}

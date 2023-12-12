@@ -1,0 +1,212 @@
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 5px 10%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    border-bottom: 2px solid #000;
+}
+
+    header .logo {
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+div .logo2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+div .logo3 {
+    margin-left: 0;
+}
+
+header nav a {
+    color: #fff0;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+    header nav a:hover {
+        text-decoration: underline
+    }
+
+body {
+    background: silver;
+    font-family: 'Arial', sans-serif;
+}
+
+main {
+    
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    color: #fff;
+    background: #333;
+    border-top: 2px solid #000;
+    position: fixed;
+    bottom: 0;
+    line-height: 45px;
+}
+.container {
+    flex: 1;
+}
+section {
+    margin: 0 auto;
+    padding: 20px;
+}
+img {
+    max-width: 100%; /* Устанавливает максимальную ширину изображения в 100% ширины родительского контейнера */
+    height: auto; /* Автоматически рассчитывает соответствующую высоту, чтобы сохранить пропорции */
+    display: block; /* Используется для устранения нежелательных пробелов вокруг изображения внутри контейнера */
+    margin: 0 auto; /* Центрирует изображение внутри родительского контейнера */
+}
+p {
+    text-indent: 20px; /* Регулируйте значение, чтобы установить желаемую табуляцию */
+    text-align: justify;
+}
+ul {
+    text-align: justify;
+}
+
+.c-figure--right {
+    float: right;
+    
+}
+.c-figure {
+    margin: 0;
+    max-width: 100%;
+    margin: 0 0 0.5em 1em;
+}
+
+
+
+
+
+.messageContainer {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+}
+
+
+
+
+.container1 {
+    
+    width: 100%;
+    margin: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container2 {
+    float: right;
+    width: 100%;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    text-align: center;
+}
+.button {
+    flex: 1;
+    box-sizing: border-box;
+    margin: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.block-container {
+    display: flex;
+}
+.block:first-child {
+    background-color: #66ccff; /* Цвет левого блока */
+}
+
+.block:last-child {
+    background-color: #ffcc66; /* Цвет правого блока */
+}
+.block {
+    flex: 1;
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 16px;
+    border: 1px solid #fff0;
+    margin: 5px;
+}
+
+.block1 {
+    box-sizing: border-box;
+    padding: 0px;
+    font-size: 16px;
+    border: 1px solid #fff0;
+    margin: 5px;
+    background-color: #fff;
+}
+/* Стили для списка внутри тега <a> */
+u ol {
+    list-style-type: decimal; /* тип нумерации - десятичная */
+    margin-left: 20px; /* отступ слева для выделения нумерации */
+}
+
+/* Стили для элементов списка */
+u li {
+    margin: 5px 0; /* отступы между элементами списка */
+}
+
+/* Стиль вывода ошибки */
+.text-center {
+    color: red; /* Цвет текста ошибки */
+    margin-top: 5px; /* Отступ сверху */
+}
+
+/*Для меню*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    position: relative;
+}
+
+nav a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border: 1px solid #000;
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}

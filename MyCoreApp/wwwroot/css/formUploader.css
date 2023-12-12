@@ -1,0 +1,49 @@
+﻿
+.files-container label {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 170px;
+    font-family: Arial;
+}
+
+.upload {
+    position: relative;
+    display: block;
+    border: 1px solid black;
+    background-color: #ecedee;
+    padding: 3em;
+    margin: 1em auto;
+    border-radius: 4px;
+}
+
+.files-container button {
+    width: 100%;
+}
+
+.upload label {
+    border-bottom: 1px solid #ccc;
+    padding: 1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.upload:hover {
+    background-color: #86b7fe;
+}
+
+.upload input {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 0;
+}
+
+#names li {
+    margin: 1em;
+}
